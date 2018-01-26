@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,19 +107,19 @@
             text-align: justify;
         }
 
-        .card .btn{
+        .btn.btn-yellow{
             background-color: rgb(255, 255, 64);
             border: yellow;
             font-size: 14px;
             color: #333333;
         }
 
-        .card .btn:hover{
+        .btn.btn-yellow:hover{
             background-color: orange;
             transition: 0.5s;
         }
 
-        .cart .btn:focus{
+        .btn:focus{
             box-shadow: none;
         }
 
@@ -129,7 +129,23 @@
             -webkit-box-shadow: none !important;
             box-shadow:none !important;
         }
+        .jumbotron{
+            top: 205px;
+            position: relative;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: antiquewhite;
+            border-radius: 0;
+            top: 200px;
 
+
+        }
+        .jumbotron .lead{
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+        }
     </style>
 </head>
 <body>
@@ -170,7 +186,13 @@
     <div class="main-content">
         <!-- Featured -->
         <section class="featured">
-              
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="d-none">Une pizza pour bien coder</h1>
+                    <p class="lead">Une bonne pizza<br>pour bien coder</p>
+                    <a class="btn btn-yellow" href="#" role="button">Manger cette pizza</a>
+                </div>
+            </div>
         </section>
         <!-- end .featured -->
 
@@ -195,7 +217,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Pizza Yolo</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +234,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza Yolo</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                        <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                     </div>
                                 </div>
                             </div>
@@ -222,7 +244,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza Yolo</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                        <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                     </div>
                                 </div>
                             </div>
@@ -232,7 +254,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza Yolo</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                        <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                     </div>
                                 </div>
                             </div>
@@ -242,7 +264,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza Yolo</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                        <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +274,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza Yolo</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                        <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                     </div>
                                 </div>
                             </div>
@@ -262,7 +284,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza Yolo</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                        <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                     </div>
                                 </div>
                             </div>
@@ -272,7 +294,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Pizza Yolo</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                        <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                     </div>
                                 </div>
                             </div>
@@ -308,7 +330,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Pizza Yolo</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                 </div>
                             </div>
                         </div>
@@ -321,7 +343,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Pizza Yolo</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                 </div>
                             </div>
                         </div>
@@ -334,7 +356,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Pizza Yolo</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +369,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Pizza Yolo</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    <a href="#" class="btn btn-sm btn-block btn-yellow">8.99 $</a>
                                 </div>
                             </div>
                         </div>
@@ -395,7 +417,7 @@
                             <div class="form-group">
                                     <textarea id="message" name="phone" class="form-control" rows="8" placeholder="Votre Message"></textarea>
                             </div>
-                            <button type="button" class="btn btn-warning">SEND MESSAGE</button>
+                            <button type="button" class="btn btn-yellow">SEND MESSAGE</button>
                     </form>
             </div>
         </div>
