@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Pizza</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        section{
+            margin-bottom: 80px;
+        }
+        section:last-child{
+            margin-bottom: 160px;
+        }
+        .section-header{
+            text-align: center;
+        }
+        .section-title{
+            margin: 0 0 10px 0;
+            padding: 0 0 10px 0;
+            text-transform: uppercase;
+
+            display: inline-block;
+            border-bottom: 3px solid #fbff00;
+        }
+        .section-title::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .section-header .lead{
+            color: #797979;
+        }      
+        .main-header {
+            background-color: rgba(0, 0, 0, 0.6)
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: rgba(255,255,255,.5);
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: rgba(255,255,255,1);
+        }
+
+        .featured {
+            background-image: url(assets/images/pizza-show-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 700px;
+        }   
+
+        .googlemap, .contact {
+            background-color: #333333;
+            color: #FFFFFF;
+        }
+        .googlemap-content {
+            top: -80px;
+            height: 380px !important;
+            width: 100% !important;
+            position: relative;
+            overflow: hidden;
+        }
+        .googlemap iframe {
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                height: 200%;
+                width: 200%;
+        }
+        .contact{
+            text-align: center;
+        }
+        .title-contact{
+            margin: 0 0 10px 0;
+            padding: 0 0 10px 0;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        .form-control{
+            border-radius: 0;
+            background-color: #333333;
+        }
+
+        .form-control:focus{
+            background-color: #333333;
+            box-shadow: none;
+            border-color: #ced4da;
+        }
+    
+        .copyright {
+            background-color: #ffffff;
+        }
+
+        .card {
+            border: none;
+        }
+        .card-title {
+            text-align: center;
+        }
+        .card-text {
+            text-align: justify;
+        }
+
+        .card .btn{
+            background-color: rgb(255, 255, 64);
+            border: yellow;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .card .btn:hover{
+            background-color: orange;
+            transition: 0.5s;
+        }
+
+        .cart .btn:focus{
+            box-shadow: none;
+        }
+
+        *, *:hover, *:focus{
+            outline: none;
+            border-color: inherit;
+            -webkit-box-shadow: none !important;
+            box-shadow:none !important;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- Main header -->
+    <header class="main-header fixed-top">
+        <div class="container">
+            <!-- Menu principal -->
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nos Pizzas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nos Salades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- end .navbar -->
+        </div>
+    </header>
+    <!-- end - .main-header -->
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Featured -->
+        <section class="featured">
+              
+        </section>
+        <!-- end .featured -->
+
+        <!-- nos pizzas -->
+        <section class="pizzas">
+            <div class="container">
+
+                <!-- Section header -->
+                <div class="section-header">
+                    <h3 class="section-title">Titre Section</h3>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In magni harum praesentium dignissimos quis obcaecati deleniti expedita at aliquid ut iusto delectus quod nemo maxime omnis deserunt, sint vel optio.</p>
+                </div>
+                <!-- end section header -->
+                
+                <!-- Liste des pizzas -->
+                <div class="row">
+                    
+                        <!-- column -->
+                        <div class="col-3">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/images/pizza-1.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pizza Yolo</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end - column -->
+    
+                        <!-- ------------------------------ -->
+                        <!-- ------------------------------ -->
+                        <!-- ------------------------------ -->
+    
+    
+                        <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/pizza-2.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pizza Yolo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/pizza-3.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pizza Yolo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/pizza-4.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pizza Yolo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/pizza-5.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pizza Yolo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/pizza-6.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pizza Yolo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/pizza-7.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pizza Yolo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/pizza-8.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pizza Yolo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- ------------------------------ -->
+                        <!-- ------------------------------ -->
+                        <!-- ------------------------------ -->
+    
+                    </div>
+                    <!-- fin - liste des pizzas -->
+
+            </div>
+        </section>
+        <!-- end .pizzas -->
+
+        <!-- Nos salades -->
+        <section class="salads">
+            <div class="container">
+
+                 <!-- Section header -->
+                 <div class="section-header">
+                    <h3 class="section-title">Titre Section</h3>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In magni harum praesentium dignissimos quis obcaecati deleniti expedita at aliquid ut iusto delectus quod nemo maxime omnis deserunt, sint vel optio.</p>
+                 </div>
+                <!-- end section header -->
+
+                <!-- Liste des salades -->
+                <div class="row">
+                    
+                        <!-- column -->
+                        <div class="col-3">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/images/salade-1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pizza Yolo</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end - column -->
+                    
+                    <!-- column -->
+                    <div class="col-3">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/images/salade-2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pizza Yolo</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end - column -->
+                    
+                    <!-- column -->
+                    <div class="col-3">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/images/salade-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pizza Yolo</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end - column -->
+                    
+                    <!-- column -->
+                    <div class="col-3">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/images/salade-4.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pizza Yolo</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-sm btn-block btn-primary">8.99 $</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end - column -->
+                </div>
+                <!-- fin - liste des salades -->
+
+
+
+            </div>
+        </section>
+        <!-- end .salads -->
+
+    </div>
+    <!-- end .main-content -->
+
+    <!-- Main footer -->
+    <footer class="main-footer">
+        <!-- Google Map -->
+        <div class="googlemap">
+            <div class="container">
+                <div class="googlemap-content">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.435243159774!2d1.0996521513114208!3d49.43849026753785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0de7e3153ffff%3A0x3ae23858ef5e17f0!2sNFactory%2C+Incubateur+%26+Acc%C3%A9l%C3%A9rateur+Normand!5e0!3m2!1sfr!2sfr!4v1516870955000" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form de contact -->
+        <div class="contact">
+            <div class="container">
+                <h5 class="title-contact">Alors, c'etait bon ?</h5>
+                <p class="lord">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas voluptates autem dolores eius itaque sed dicta deleniti</p>
+                    <form>
+                            <div class="form-row">
+                                <div class="col">
+                                <input type="text" class="form-control" placeholder="Votre Prénom">
+                                </div>
+                                <div class="col">
+                                <input type="text" class="form-control" placeholder="Votre Nom">
+                                </div>
+                                <div class="form-group col-md-6">
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Adresse email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <textarea id="message" name="phone" class="form-control" rows="8" placeholder="Votre Message"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-warning">SEND MESSAGE</button>
+                    </form>
+            </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="copyright">
+            <div class="container">
+                &copy; 2018 Web Pizza
+            </div>
+        </div>
+
+    </footer>
+    <!-- end .main-footer -->
+
+    <!-- Scripts -->
+</body>
+</html>
